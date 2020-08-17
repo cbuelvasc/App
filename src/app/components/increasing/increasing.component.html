@@ -1,0 +1,30 @@
+<div class="widget-content widget-content-area">
+    <div class="input-group mb-4">
+        <div class="input-group-prepend">
+            <button [ngClass]="btnClassMinus" type="button" (click)="changeValue(-5)">
+                <div class="w-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-minus">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <input type="number" class="form-control" placeholder="Progress" aria-label=""
+            [ngClass]="{'is-invalid': progress > 100 || progress < 0}" (ngModelChange)="onChange($event)"
+            [(ngModel)]="progress">
+        <div class="input-group-append">
+            <button [ngClass]="btnClassPlus" type="button" (click)="changeValue(5)">
+                <div class="w-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-plus">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,22 +1,14 @@
-<div class="main-wrapper">
-    <app-sidebar></app-sidebar>
-    <div class="page-wrapper">
-        <app-header></app-header>
-        <div class="page-content">
+<app-header></app-header>
 
-            <app-breadcrumbs></app-breadcrumbs>
+<div class="main-container" id="container">
+    <div class="overlay"></div>
+    <div class="search-overlay"></div>
+    <div class="sidebar-wrapper sidebar-theme">
+        <app-sidebar></app-sidebar>
+    </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <router-outlet></router-outlet>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div id="content" class="main-content">
+        <router-outlet></router-outlet>
         <app-footer></app-footer>
     </div>
 </div>

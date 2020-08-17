@@ -1,0 +1,19 @@
+<div id="chartDonut" class="col-xl-12 layout-spacing">
+    <div class="statbox widget box box-shadow">
+        <div class="widget-header">
+            <div class="row">
+                <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <h4>{{title}}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="widget-content widget-content-area">
+            <div id="donut-chart" class=""></div>
+
+            <div class="code-section-container">
+                <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [labels]="chartOptions.labels"
+                    [responsive]="chartOptions.responsive"></apx-chart>
+            </div>
+        </div>
+    </div>
+</div>
