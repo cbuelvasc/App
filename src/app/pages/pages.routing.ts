@@ -5,6 +5,7 @@ import { GraphOneComponent } from './graph-one/graph-one.component';
 import { ProgressComponent } from './progress/progress.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 const routes: Routes = [
     {
@@ -13,6 +14,7 @@ const routes: Routes = [
         children: [
             { path: '', component: DashboardComponent },
             { path: 'progress', component: ProgressComponent },
+            { path: 'account-settings', component: AccountSettingsComponent },
             { path: 'graphOne', component: GraphOneComponent },
         ]
     }
